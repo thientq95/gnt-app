@@ -1,4 +1,5 @@
-# GntApp
+# GNT APP
+[Link Page](https://thientq95.github.io/gnt-app/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
