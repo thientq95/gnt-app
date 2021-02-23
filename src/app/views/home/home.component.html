@@ -1,0 +1,159 @@
+<section>
+  <div class="container-fluid container-slider">
+    <div class="slider-video">
+      <video autoplay>
+        <source src="https://www.gnt.com.vn/_nuxt/videos/sample.7b56f47.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="slider-content">
+      <div class="container">
+        <h3 class="slider-title loadLeft active-effect">
+          A reputable product innovator and offshore software development provider
+        </h3>
+        <p class="slider-description loadRight active-effect">
+          We've never ceased to amaze and benefit users and clients alike throughout the years.
+          <br />
+          Let your digital journey start here with GNT ever-evolving Dedicated Teams.
+        </p>
+      </div>
+      <div class="slider-btn loadBottom active-effect">
+        <a href="javascript:void(0)" class="btn-play">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTAgMGg0OHY0OEgweiIvPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBmaWxsPSJ0cmFuc3BhcmVudCIgZD0iTS01ODgtMzA2SDg1MnYzODk0SC01ODh6Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSI+CiAgICAgICAgICAgIDwhLS0gPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzIiIGZpbGw9IiNGRkYiIGZpbGwtb3BhY2l0eT0iLjEyIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz4gLS0+CiAgICAgICAgICAgIDxnIG9wYWNpdHk9Ii45NiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOCA4KSI+CiAgICAgICAgICAgICAgICA8bWFzayBpZD0iYiIgZmlsbD0iI2ZmZiI+CiAgICAgICAgICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjYSIvPgogICAgICAgICAgICAgICAgPC9tYXNrPgogICAgICAgICAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE5LjE1OCAzMi4zNzZsLjA4NC0xNi44Yy4wMDUtLjk4NCAxLjEzNS0xLjU1NSAxLjkyMi0uOTVsMTEuMTY4IDguNDUyYy42NDYuNDg1LjY0IDEuNDQ1LS4wMSAxLjkyM2wtMTEuMjQ5IDguMzQyYy0uNzk0LjU5OC0xLjkyLjAxNS0xLjkxNS0uOTY3TTI0LjExNiAwQzEwLjg2OC0uMDY3LjA2MyAxMC42MzIgMCAyMy44OC0uMDY3IDM3LjEyOCAxMC42MzMgNDcuOTMzIDIzLjg4MSA0OCAzNy4xMyA0OC4wNjIgNDcuOTM1IDM3LjM2MyA0OCAyNC4xMTggNDguMDY1IDEwLjg3IDM3LjM2NS4wNjUgMjQuMTE2IDAiIG1hc2s9InVybCgjYikiLz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container container-partners">
+    <ngu-carousel #myCarousel [inputs]="carouselTileConfig" [dataSource]="carouselTileItems$ | async">
+      <ngu-tile *nguCarouselDef="let item; let i = index;">
+        <div class="partner-item">
+          <img [src]="item" class="partner-img" />
+        </div>
+      </ngu-tile>
+    </ngu-carousel>
+  </div>
+</section>
+
+<section>
+  <app-slider-job></app-slider-job>
+</section>
+
+<section>
+  <div class="container offer gnt">
+    <div class="header">
+      <div class="content">
+        <h1 class="title">What We Offer</h1>
+        <p>GNT is one of the world’s leading IT companies with the can-do pioneering spirit in the 21st century. Our
+          talented engineers and designers bring excellent services and products to global clients.
+
+        </p>
+      </div>
+      <a class="see-more">See more <i class="fa fa-angle-right"></i></a>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <a href="javascript:void(0)" class="offer-item">
+          <div class="resource">
+            <video autoplay muted="muted">
+              <source src="https://www.gnt.com.vn/_nuxt/videos/1.04d7473.mp4" />
+            </video>
+          </div>
+          <h3 class="offer-title">Offshore Software Development</h3>
+          <p>Businesses choosing a trusted company that provides offshore software development services will certainly reap tremendous benefits regarding project management, flexibility and budget solutions. Assemble GNT dream team now and the world is your digital oyster.</p>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="javascript:void(0)" class="offer-item">
+          <div class="resource">
+            <video autoplay muted="muted">
+              <source src="https://www.gnt.com.vn/_nuxt/videos/2.75863d8.mp4" />
+            </video>
+          </div>
+          <h3 class="offer-title">Art-Design</h3>
+          <p>Our over 100 artists and designers excel at design projects including 2D, 3D, motion design, UI/UX design, etc. Click to feast your eyes on our superb products!</p>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="javascript:void(0)" class="offer-item">
+          <div class="resource">
+            <video autoplay muted="muted">
+              <source src="https://www.gnt.com.vn/_nuxt/videos/3.6ff0381.mp4" />
+            </video>
+          </div>
+          <h3 class="offer-title">Mobile-Web</h3>
+          <p>Our designers and developers create innovative, high quality mobile apps as well as websites according to your business needs.</p>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="javascript:void(0)" class="offer-item">
+          <div class="resource">
+            <video autoplay muted="muted">
+              <source src="https://www.gnt.com.vn/_nuxt/videos/4.483c082.mp4" />
+            </video>
+          </div>
+          <h3 class="offer-title">Blockchain</h3>
+          <p>We work with clients to develop industry-leading blockchain-based platforms and applications that dramatically improve their business processes.</p>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="javascript:void(0)" class="offer-item">
+          <div class="resource">
+            <video autoplay muted="muted">
+              <source src="https://www.gnt.com.vn/_nuxt/videos/5.2895eed.mp4" />
+            </video>
+          </div>
+          <h3 class="offer-title">AR-VR</h3>
+          <p>Our AR and VR services have already been helping our customers create better workflows, designs while improving collaboration and reducing costs. </p>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="javascript:void(0)" class="offer-item">
+          <div class="resource">
+            <video autoplay muted="muted">
+              <source src="https://www.gnt.com.vn/_nuxt/videos/6.3361b24.mp4" />
+            </video>
+          </div>
+          <h3 class="offer-title">Start-up Support</h3>
+          <p>GNT supports start-up enterprises with our cutting-edge technologies. When brilliant ideas intersect with such solid support, entrepreneurial creativity and possibility will know no bounds.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="about-gnt">
+    <div class="background-img">
+      <img src="https://www.gnt.com.vn/_nuxt/img/img.12c769c.jpg" />
+    </div>
+    <div class="content container">
+      <p>
+        Established over 10 years ago in Vietnam, GNT VN takes pride in providing numerous successful services to millions of users worldwide, specifically targeted at the Japanese market and expanding our customer base to the US.
+      </p>
+      <a class="see-more">See more <i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="our-work gnt">
+    <div class="container">
+      <div class="header">
+        <div class="content">
+          <h1 class="title">What We Create</h1>
+          <p>Our technological products and services focus on bringing great experience, satisfaction to both clients and users. We also develop, produce, and publish games to the global market with diverse types of characters.
+  
+          </p>
+        </div>
+        <a class="see-more">See more <i class="fa fa-angle-right"></i></a>
+      </div>
+    </div>
+
+    <!-- <app-slider-our-work></app-slider-our-work> -->
+  </div>
+</section>

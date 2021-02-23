@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: "Roboto Slab",serif;
+}
+
+p {
+    color: #747c83;
+}
+
+.ngucarousel-items {
+    .tile {
+        box-shadow: none !important;
+    }
+}

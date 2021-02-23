@@ -3,14 +3,40 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './layouts/header/header.component';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { HomeComponent } from './views/home/home.component';
+import { AboutUsComponent } from './views/about-us/about-us.component';
+import { CareerComponent } from './views/career/career.component';
+import { BlogComponent } from './views/blog/blog.component';
+import { ContactComponent } from './views/contact/contact.component';
+import { ServiceComponent } from './views/service/service.component';
 
+import { NguCarouselModule } from '@ngu/carousel';
+import { SliderJobComponent } from './components/slider-job/slider-job.component';
+import { SliderOurWorkComponent } from './components/slider-our-work/slider-our-work.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    AboutUsComponent,
+    CareerComponent,
+    BlogComponent,
+    ContactComponent,
+    ServiceComponent,
+    SliderJobComponent,
+    SliderOurWorkComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    NguCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

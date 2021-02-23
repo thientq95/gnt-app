@@ -1,0 +1,88 @@
+.footer {
+    background: linear-gradient(90deg, #fafbff 5px, transparent 1%) 50%,
+        linear-gradient(#fafbff 5px, transparent 1%) 50%, #f8f9fd;
+    background-size: 15px 15px;
+    padding-top: 50px;
+    .footer-top {
+        display: block;
+        padding-bottom: 80px;
+    }
+    .gnt-title {
+        font-weight: 700;
+        font-size: 16px;
+        color: #000;
+    }
+    .footer-left {
+        padding-left: 0;
+        list-style: none;
+        .name {
+            font-weight: 700;
+            font-size: 16px;
+            color: #000;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                background: #323a45;
+                border-radius: 100%;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .select-lang {
+        display: inline;
+        width: 150px;
+        background: transparent;
+        border: 1px solid #ebebeb;
+        &:focus, &:hover {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid #ebebeb;
+        }
+    }
+    .social-icon {
+        .icon-item {
+            cursor: pointer;
+            display: inline-block;
+            margin: 24px 20px;
+            a {
+                display: block;
+                width: 30px;
+                height: 30px;
+                transition: all 0.5s ease;
+                text-align: center;
+                i {
+                    font-size: 28px;
+                    line-height: 30px;
+                    color: #6b7c93;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                a {
+                    transform-origin: center bottom;
+                    transform: scale(1.25);
+                    i {
+                        color: #1da1f2;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 24px 0;
+        border-top: 1px solid #d6d6d6;
+        p,
+        a {
+            color: #466799;
+        }
+        .privacy {
+            color: #466799;
+        }
+    }
+}
