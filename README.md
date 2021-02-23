@@ -1,5 +1,5 @@
 # GNT APP
-linke: <a href="https://thientq95.github.io/gnt-app/">Link</a>
+[Link Page](https://thientq95.github.io/gnt-app/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
