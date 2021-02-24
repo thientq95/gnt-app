@@ -15,8 +15,8 @@ import { slider } from 'src/app/animations/slider.animation';
 export class SliderJobComponent implements OnInit {
 
   imgags = [
-    'https://s3.ap-southeast-1.amazonaws.com/gambaru.io/prod/img/Frontend1282px.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210221T135308Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3599&X-Amz-Credential=AKIAZ3PVRA52FB4D3W7N%2F20210221%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Signature=7b0732515b43984345b52d4af59013d1c77c60a729c74a05cd615b088185601a',
-    'https://s3.ap-southeast-1.amazonaws.com/gambaru.io/prod/img/Backend1282px.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210221T135308Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3599&X-Amz-Credential=AKIAZ3PVRA52FB4D3W7N%2F20210221%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Signature=3764433ff12d2774f053a0389e0e5596a883ca711fadb061ea066502d01ec1b3',
+    'https://s3.ap-southeast-1.amazonaws.com/gambaru.io/prod/img/Frontend1282px.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210223T141248Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3599&X-Amz-Credential=AKIAZ3PVRA52FB4D3W7N%2F20210223%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Signature=2c108d32ac915baaa75b78ff19d54bf2b3ee1f86459865c284a4c48e1b8d115b',
+    'https://s3.ap-southeast-1.amazonaws.com/gambaru.io/prod/img/Frontend1282px.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210223T141248Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3599&X-Amz-Credential=AKIAZ3PVRA52FB4D3W7N%2F20210223%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Signature=2c108d32ac915baaa75b78ff19d54bf2b3ee1f86459865c284a4c48e1b8d115b',
   ];
   public carouselTileItems$: Observable<number[]>;
   public carouselTileConfig: NguCarouselConfig = {

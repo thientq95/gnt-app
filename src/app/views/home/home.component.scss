@@ -153,41 +153,7 @@
     transform: translate(0);
 }
 
-.gnt {
-    .header {
-        position: relative;
-        margin-bottom: 60px;
-        .content {
-            .title {
-                font-size: 48px;
-                font-weight: 500;
-                letter-spacing: normal;
-                margin-bottom: 20px;
-            }
-            p {
-                font-size: 16px;
-                color: #747c83;
-                line-height: 1.6;
-                width: 50%;
-                letter-spacing: 0.5px;
-            }
-        }
-        a {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            font-size: 16px;
-            color: #747c83;
-            i {
-                margin-left: 5px;
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 1.63;
-                transition: all 0.5s ease;
-            }
-        }
-    }
-}
+
 .offer {
     padding: 144px 15px 114px;
     .offer-item {
