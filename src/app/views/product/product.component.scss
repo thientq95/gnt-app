@@ -1,5 +1,5 @@
 .product {
-    padding: 144px 15px 0;
+    padding: 144px 15px 144px;
     .content {
         h4 {
             font-weight: 600;
@@ -53,15 +53,19 @@
 }
 
 .product-item {
+    margin-bottom: 10px;
     .product-img {
         img {
             width: 100%;
         }
     }
     .product-right {
+        position: relative;
+        height: 100%;
         .title {
             margin-top: 10px;
             font-weight: 500;
+            text-transform: uppercase;
         }
         p {
             letter-spacing: 0.5px;
@@ -72,6 +76,7 @@
             transition: all .5s ease;
             font-size: 16px;
             font-weight: 700;
+            padding: 20px 0;
             &:hover {
                 .fa {
                     margin-left: 15px;
@@ -83,6 +88,26 @@
             margin-left: 10px;
             font-size: 20px;
             font-weight: 700;
+        }
+    }
+    .item-foot {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        .f-left {
+            width: 50%;
+            display: inline-flex;
+            .app-store {
+                margin-right: 15px;
+            }
+        }
+        .f-right {
+            width: 50%;
+            float: right;
+            text-align: right;
+            display: inline;
+            padding-top: 10px;
         }
     }
 }

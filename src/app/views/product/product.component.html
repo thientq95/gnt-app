@@ -45,39 +45,47 @@
       </ul>
     </div>
     <div class="list-product">
-      <div class="product-item">
-        <div class="row">
-          <div class="col-sm-7">
-            <div class="product-img">
-              <img src="https://www.gnt.com.vn/_nuxt/img/GOKEN.4b887b1.jpg" />
+      <ng-container *ngFor="let item of products">
+        <div class="product-item">
+          <div class="row">
+            <div class="col-sm-7">
+              <div class="product-img">
+                <img [src]="item.link" />
+              </div>
             </div>
-          </div>
-          <div class="col-sm-5">
-            <div class="product-right">
-              <h3 class="title">Goken</h3>
-              <p>
-                GOKEN seeks to bring back everything that was right about gaming in an action-packed open world environment in the form of the good old Action RPG genre and have old school gamers tremble in nostalgia. Combining the classic style of Japanese role-playing games with the innovation and intuition of Vietnamese artists and developers, GOKEN brings nothing to gamers but pure joy and exhilaration.
-              </p>
-              <a class="go-to">
-                Go to GOKEN
-                <i class="fa fa-angle-right"></i>
-              </a>
-              <div class="item-foot">
-                <div class="list-app">
-                  <div class="app-store">
-                    <a>
-                      <img src="https://www.gnt.com.vn/_nuxt/img/ic-steam.3076309.svg"/>
-                    </a>
+            <div class="col-sm-5">
+              <div class="product-right">
+                <h3 class="title">{{ item.title }}</h3>
+                <p>
+                  {{ item.description }}
+                </p>
+                <a class="go-to">
+                  Go to {{ item.title }}
+                  <i class="fa fa-angle-right"></i>
+                </a>
+                <div class="item-foot">
+                  <div class="f-left">
+                    <div class="app-store">
+                      <a>
+                        <img
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCA0NCA0NCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTAgMGgzMnYzNkgweiIvPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMCAwaDQ0djQ0SDB6Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNiA0KSI+CiAgICAgICAgICAgIDxtYXNrIGlkPSJiIiBmaWxsPSIjZmZmIj4KICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI2EiLz4KICAgICAgICAgICAgPC9tYXNrPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjNzQ3QzgzIiBkPSJNLjEzOCAxLjdDLjAyMyAxLjk4NSAwIDIuMzE3IDAgMi42OTd2MzAuNjA3YzAgLjM1Ny4wMjMuNjg5LjEzOC45NzNsMTYuNjgtMTYuMjY0TC4xMzcgMS43em0xLjQ1NCAzNC4xOTJjLjY5Mi4yMzggMS40NzYuMDcyIDIuMjYxLS40MDRsMTkuNTQtMTEuMDE3LTUuMDMtNC45MTUtMTYuNzcgMTYuMzM2em0yOC45My0yMC4xMWwtNS4xOS0yLjk3LTUuMzUzIDUuMjAxIDUuNDIgNS4yNyA1LjA1My0yLjg0OGMyLjQ5Mi0xLjQyNiAxLjU2OS0zLjc3Ni4wNy00LjY1NHptLTcuMTk4LTQuMTFMMy44NTQuNTM3QzMuMDY3LjAxNCAyLjMwNi0uMTA0IDEuNjM4LjA4NGwxNi43NyAxNi4zODUgNC45MTUtNC43OTZ6IiBtYXNrPSJ1cmwoI2IpIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" />
+                      </a>
+                    </div>
+                    <div class="app-store">
+                      <a>
+                        <img src="https://www.gnt.com.vn/_nuxt/img/ic-steam.3076309.svg" />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div class="f-right">
-                  <p class="hashtag">#Games</p>
+                  <div class="f-right">
+                    <p class="hashtag">#{{ item.tag }}</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </ng-container>
     </div>
   </div>
 </section>

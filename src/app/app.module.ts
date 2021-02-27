@@ -17,6 +17,8 @@ import { ServiceComponent } from './views/service/service.component';
 import { NguCarouselModule } from '@ngu/carousel';
 import { SliderJobComponent } from './components/slider-job/slider-job.component';
 import { SliderOurWorkComponent } from './components/slider-our-work/slider-our-work.component';
+import { CommonModule } from '@angular/common';
+import { ProductComponent } from './views/product/product.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,11 +30,13 @@ import { SliderOurWorkComponent } from './components/slider-our-work/slider-our-
     BlogComponent,
     ContactComponent,
     ServiceComponent,
+    ProductComponent,
     SliderJobComponent,
     SliderOurWorkComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AppRoutingModule,
