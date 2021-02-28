@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from 'src/app/services/seo.service';
 
 @Component({
   selector: 'app-service',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private seoService: SeoService) {
+    this.seoService.updateTitle('GNT | Service');
+  }
+  ngOnInit(): void {
   }
 
 }

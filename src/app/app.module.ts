@@ -18,6 +18,7 @@ import { NguCarouselModule } from '@ngu/carousel';
 import { SliderJobComponent } from './components/slider-job/slider-job.component';
 import { SliderOurWorkComponent } from './components/slider-our-work/slider-our-work.component';
 import { CommonModule } from '@angular/common';
+import { NgxMasonryModule } from 'ngx-masonry';
 import { ProductComponent } from './views/product/product.component';
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ProductComponent } from './views/product/product.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    NguCarouselModule
+    NguCarouselModule,
+    NgxMasonryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

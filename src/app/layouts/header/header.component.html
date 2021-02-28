@@ -1,28 +1,30 @@
 <div class="wrap-header">
-  <div class="header fixed">
+  <div class="header" [ngClass]="{'fixed': isScroll}">
     <div class="container">
       <div class="logo" >
         <a routerLink="/" >
           <img src="https://www.gnt.com.vn/_nuxt/img/logo.24c15ca.svg" />
         </a>
-        
       </div>
       <div class="list-menu">
-        <div class="menu-item active">
+        <div class="menu-item" routerLinkActive="active">
           <a routerLink="/service">Service</a>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" routerLinkActive="active">
           <a routerLink="/product">Products</a>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" routerLinkActive="active">
           <a routerLink="/career">Careers</a>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" routerLinkActive="active">
           <a routerLink="/blog">Blog</a>
+        </div>
+        <div class="menu-item" routerLinkActive="active">
+          <a routerLink="/about-us">About us</a>
         </div>
       </div>
       <div class="contact-us">
-        <button type="button" class="btn btn-primary" routerLink="contact">Contact us</button>
+        <button type="button" class="btn btn-primary" routerLink="/contact">Contact us</button>
       </div>
     </div>
   </div>

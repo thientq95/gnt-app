@@ -1,3 +1,62 @@
-<p>
-  about-us works!
-</p>
+<section class="about-us mt-144 mb-144">
+  <div class="container gnt">
+    <div class="header">
+      <div class="content">
+        <h1 class="title">Who We Are</h1>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>Ours are hands-on leaders. One or more of the folks you see below will be working on your products
+              directly. We mean actually working, not overseeing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner-img">
+    <img src="https://www.gnt.com.vn/_nuxt/img/img.3b22605.jpg" />
+  </div>
+  <div class="container gnt mt-144">
+    <div class="header">
+      <div class="content">
+        <h1 class="title">Leaders</h1>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>With you, we challenge infinite possibilities</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list-card">
+      <div class="row">
+        <ng-container *ngFor="let item of leaders">
+          <div class="col-md-4">
+            <div class="card-item">
+              <div class="card-img">
+                <img [src]="item.link" />
+                <div class="description">
+                  {{ item.description }}
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="title">{{ item.name }} </p>
+                <p>{{ item.job }} </p>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <div class="office mt-144">
+    <div class="header">
+      <div class="content text-center">
+        <div class="container">
+          <h1 class="title">Office Locations</h1>
+          <p class="letter-normal">Our offices in Ho Chi Minh City, Tokyo, and San Francisco located in iconic buildings
+            provide flexible serviced office space and are also convenient to visit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

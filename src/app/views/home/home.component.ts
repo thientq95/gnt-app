@@ -4,6 +4,7 @@ import { NguCarouselConfig } from '@ngu/carousel';
 import { Observable, interval } from 'rxjs';
 import { startWith, take, map } from 'rxjs/operators';
 import { slider } from 'src/app/animations/slider.animation';
+import { SeoService } from 'src/app/services/seo.service';
 
 @Component({
     selector: 'app-home',
@@ -38,7 +39,9 @@ export class HomeComponent implements OnInit {
     };
     tempData: any[];
 
-    constructor(private cdr: ChangeDetectorRef) { }
+    constructor(private cdr: ChangeDetectorRef, private seoService: SeoService) {
+        this.seoService.updateTitle('GNT | Home');
+    }
 
     ngOnInit(): void {
         this.tempData = [];
