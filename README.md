@@ -31,4 +31,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Tooi da thay doi file nay
 
 
+<<<<<<< HEAD
 ksdskjdsk
+=======
+dssdsdss
+>>>>>>> thientq
